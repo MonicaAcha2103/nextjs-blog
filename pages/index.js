@@ -8,7 +8,15 @@ import utilStyles from "../styles/utils.module.css";
 export default function Home({ allPostsData }) {
   return (
     <Layout home>
-      <p>Front end developer</p>
+      <p className={utilStyles.intro}>
+        Hi, I'm <b>Monica</b>. I am a software engineer with expertise in
+        building web and mobile apps using React and React Native. You can
+        contact me on{" "}
+        <Link href="https://www.linkedin.com/in/monica-acha-2103/">
+          Linkedin
+        </Link>
+        .
+      </p>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>

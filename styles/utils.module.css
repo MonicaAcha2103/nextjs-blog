@@ -50,3 +50,35 @@
   .lightText {
     color: #666;
   }
+
+  .postData{
+    line-height: 1.8;
+  }
+
+ .socialIcons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .socialIcon {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px 1px rgba(50, 50, 50, 0.15);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 250ms;
+    margin: 1rem 1rem 1rem 0;
+  }
+
+  .socialIcon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .intro{
+    font-size: 1.2rem;
+  }
