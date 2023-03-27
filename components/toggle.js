@@ -4,14 +4,15 @@ import DarkModeToggle from "react-dark-mode-toggle";
 
 export default function ThemeToggle() {
   const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme("light");
+  const { theme, setTheme } = useTheme();
   useEffect(() => {
     setMounted(true);
   }, []);
 
   const toggleDarkMode = () => {
-    if (theme === "light") setTheme("dark");
-    else setTheme("light");
+    if (theme === "dark") {
+      setTheme("light");
+    } else setTheme("dark");
   };
 
   if (!mounted) {
