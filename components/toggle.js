@@ -1,19 +1,15 @@
-import * as React from "react";
-
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 import DarkModeToggle from "react-dark-mode-toggle";
 
-const ThemeToggle = () => {
+export default function ThemeToggle() {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme("light");
-  const [isDarkMode, setDarkMode] = useState(false);
-
-  // useEffect only runs on the client, so now we can safely show the UI
   useEffect(() => {
     setMounted(true);
   }, []);
-  const toggleDarkMode = (checked) => {
+
+  const toggleDarkMode = () => {
     if (theme === "light") setTheme("dark");
     else setTheme("light");
   };
@@ -28,6 +24,4 @@ const ThemeToggle = () => {
       size={80}
     />
   );
-};
-
-export default ThemeToggle;
+}

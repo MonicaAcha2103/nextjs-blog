@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import { Providers } from "./providers";
-import ThemeToggle from "./themeToggle";
+import ThemeToggle from "./toggle";
 import Link from "next/link";
 
 const name = "Monica";
