@@ -22,18 +22,6 @@ const ThemeToggle = () => {
     return null;
   }
   return (
-    // <select value={theme} onChange={(e) => setTheme(e.target.value)}>
-    //   <option value="system">System</option>
-    //   <option value="dark">Dark</option>
-    //   <option value="light">Light</option>
-    // </select>
-    // <DarkModeSwitch
-    //   style={{ marginBottom: "2rem" }}
-    //   checked={theme === "dark"}
-    //   onChange={toggleDarkMode}
-    //   size={120}
-    //   moonColor="blue"
-    // />
     <DarkModeToggle
       onChange={toggleDarkMode}
       checked={theme === "dark"}
